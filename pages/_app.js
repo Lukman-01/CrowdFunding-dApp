@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <>
-      {/* <ThirdwebProvider desiredChainId={ChainId.Sepolia}> */}
+      <ThirdwebProvider desiredChainId={ChainId.Sepolia}>
         <MantineProvider
           theme={{
             colors: {
@@ -60,7 +60,7 @@ export default function App({ Component, pageProps }) {
             </PreLoader>
           </GlobalProvider>
         </MantineProvider>
-        {/* </ThirdwebProvider> */}
+      </ThirdwebProvider>
       </>
     </>
   );
